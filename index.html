@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио студента</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                <img src="images/logo.jpg"
+                alt="Логотип"
+                class="logo-photo"
+                />
+                </a>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Главная</a></li>
+                    <li class="nav-item"><a href="pages/projects.html" class="nav-link">Проекты</a></li>
+                    <li class="nav-item"><a href="pages/diary.html" class="nav-link">Дневник</a></li>
+                    <li class="nav-item"><a href="pages/contacts.html" class="nav-link">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-image">
+                        <img
+                  src="images/photo_stud.jpg"
+                  alt="Фото студента"
+                  class="hero-photo"
+                  />
+                    </div>
+                    <div class="hero-text">
+                        <h1 class="hero-title">Привет! Я студент</h1>
+                        <p class="hero-subtitle">Факультет Фулл-стек разработка, группа ЭФБО-14-24</p>
+                        <p class="hero-description">Увлекаюсь веб-разработкой</p>
+                        <button class="download-btn">Скачать резюме</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills">
+            <div class="container">
+                <h2 class="section-title">Мои навыки</h2>
+                <div class="skills-list">
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">HTML/CSS</span>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 90%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">JavaScript</span>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 80%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">Bootstrap</span>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 85%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info">
+                            <span class="skill-name">React</span>
+                            <span class="skill-percent">60%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 60%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects">
+            <div class="container">
+                <h2 class="section-title">Лучшие проекты</h2>
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-card-image">
+                            <img src="images/Project-1.jpg" alt="Первый проект">
+                        </div>
+                        <div class="project-card-content">
+                            <h3 class="project-card-title">Онлайн казино</h3>
+                            <p class="project-card-description">Простое онлайн казино, запрет операций в банке гарантирован</p>
+                        <div class="project-card-link">
+                            <span class="link">HTML</span>
+                            <span class="link">115-ФЗ</span>
+                            <span class="link">CSS</span>
+                        </div>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-card-image">
+                            <img src="images/Project-2.jpg" alt="Второй проект">
+                        </div>
+                        <div class="project-card-content">
+                            <h3 class="project-card-title">Крестики нолики</h3>
+                            <p class="project-card-description">Простая реализация игры Крестики нолики</p>
+                        <div class="project-card-link">
+                            <span class="link">C++</span>
+                            <span class="link">Qt creator</span>
+                        </div>
+                        </div>
+                    </article>
+                    <article class="project-card">
+                        <div class="project-card-image">
+                            <img src="images/Project-3.jpg" alt="Третий проект">
+                        </div>
+                        <div class="project-card-content">
+                            <h3 class="project-card-title">Любой проект</h3>
+                            <p class="project-card-description">Любое описание</p>
+                        <div class="project-card-link">
+                            <span class="link">KOKO</span>
+                            <span class="link">Вторая ссылка</span>
+                        </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="copyright">© 2024 Контакты</p>
+        </div>
+    </footer>
+</body>
+</html>

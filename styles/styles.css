@@ -1,0 +1,298 @@
+/* Общие стили */
+:root{
+/* Шрифт */
+ --font_xl: 1000;
+ --font_normal: 500;
+
+/* Цвета */
+--color-bg: #ffffff;
+--color-white: #ffffff;
+--color-black: black;
+--color-buttons: #505050;
+
+/* Отступы*/
+  --space-xs: 0.5rem;
+  --space-sm: 0.75rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+
+/* Углы */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+
+  /* Тени */
+  --shadow-large: 1px 9px 15px 13px rgba(34, 60, 80, 0.3);
+  --shadow-medium: 1px 9px 15px -2px rgba(34, 60, 80, 0.3);
+  --shadow-small: 1px 9px 15px -8px rgba(34, 60, 80, 0.3);
+
+/* Хрень на анимацию не помню как*/
+  --transition: all 0.3s ease;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Шапка */
+.header {
+    background-color: #f8f9fa;
+    padding: 10px 0;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-photo{
+    width: 100px;
+    height: 100px;
+
+}
+.nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.nav-item {
+    margin-left: 20px;
+}
+
+.nav-link {
+    font-weight: var(--font_xl);
+    font-size: 22px;
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #007bff;
+}
+
+/* Основной контент */
+.hero {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero__image {
+  text-align: center;
+}
+
+.hero-photo {
+    width: 200px;
+    height: 200px;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.hero-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.hero-description {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.download-btn {
+    background-color: #505050;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.download-btn:hover {
+    background-color: #8b8b8b;
+}
+
+/* Раздел навыков */
+.skills {
+    padding: 60px 0;
+    background-color: #eeeeee;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.8rem;
+}
+
+.skills-list {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.skill-item {
+    margin-bottom: 20px;
+}
+
+.skill-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.skill-bar {
+    height: 10px;
+    background-color: #c8cacc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.skill-progress {
+    height: 100%;
+    background-color: #007bff;
+    background: #1f572d;
+    background: linear-gradient(90deg,rgba(31, 87, 45, 1) 0%, rgba(47, 194, 108, 1) 50%, rgba(2, 196, 83, 1) 83%);
+    border-radius: 5px;
+    transition: width 0.5s ease;
+}
+
+/* Раздел проектов */
+.projects {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+.projects-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-item {
+    width: 150px;
+    height: 150px;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+.project-card{
+  background: var(--color-bg);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-medium);
+  transition: var(--transition);
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-small);
+}
+
+.project-card-image{
+  height: 200px;
+  overflow: hidden;
+}
+
+.project-card-image img{
+  width: 100%;
+  height: 100%;
+  transition: var(--transition);
+}
+
+.project-card-content {
+    padding: var(--space-lg);
+    text-align: center;
+}
+
+.project-card-title{
+font-size: 20px;
+font-weight: 600;
+}
+
+.project-card-description{
+    margin-bottom: 14px;
+}
+
+.project-card-link{
+display: flex;
+flex-wrap: wrap;
+gap: var(--space-md);
+}
+
+.link{
+background-color: var(--color-buttons);
+color: var(--color-white);
+padding: 5px 10px;
+border-radius: var(--radius-sm);
+font-size: 15px;
+font-weight: 500;
+transition: var(--transition);
+}
+
+.link:hover{
+    background-color: #8b8b8b;
+}
+
+/* Подвал */
+.footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .projects-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .nav-list {
+        flex-direction: column;
+    }
+    
+    .nav-item {
+        margin: 5px 0;
+    }
+}
