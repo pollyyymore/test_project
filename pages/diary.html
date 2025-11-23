@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио студента</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html">
+                <img src="../images/logo.jpg"
+                alt="Логотип"
+                class="logo-photo"
+                />
+                </a>
+            </div>
+            <div class="student-name">Пархоменко Аркадий</div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="../index.html" class="nav-link-">Главная</a></li>
+                    <li class="nav-item"><a href="../pages/projects.html" class="nav-link-">Проекты</a></li>
+                    <li class="nav-item"><a href="../pages/diary.html" class="nav-link-">Дневник</a></li>
+                    <li class="nav-item"><a href="../pages/contacts.html" class="nav-link-">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+<main>
+        <section class="progress-section">
+            <h1>Мой учебный прогресс</h1>
+            <div class="progress-list">
+                <div class="progress-item completed">
+                    <span class="date">15 дек</span>
+                    <span class="task">Верстка макета сайта</span>
+                    <span class="status">✓</span>
+                </div>
+                <div class="progress-item completed">
+                    <span class="date">10 дек</span>
+                    <span class="task">JavaScript основы</span>
+                    <span class="status">✓</span>
+                </div>
+                <div class="progress-item not-completed">
+                    <span class="date">05 дек</span>
+                    <span class="task">Работа с формами</span>
+                    <span class="status">✗</span>
+                </div>
+                <div class="progress-item not-completed">
+                    <span class="date">01 дек</span>
+                    <span class="task">Адаптивный дизайн</span>
+                    <span class="status">✗</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="courses-section">
+            <h2 class="course-title">Текущие курсы</h2>
+            <div class="courses-list">
+                <div class="course">
+                    <span class="course-name">Веб-разработка</span>
+                    <div class="progress-bar">
+                        <div class="skill-progress" style="width: 90%"></div>
+                    </div>
+                    <span class="percentage">90%</span>
+                </div>
+                <div class="course">
+                    <span class="course-name">JavaScript</span>
+                    <div class="progress-bar">
+                        <div class="skill-progress" style="width: 70%"></div>
+                    </div>
+                    <span class="percentage">70%</span>
+                </div>
+                <div class="course">
+                    <span class="course-name">React</span>
+                    <div class="progress-bar">
+                        <div class="skill-progress" style="width: 50%"></div>
+                    </div>
+                    <span class="percentage">50%</span>
+                </div>
+            </div>
+            <div class="course-button"><button id="add-course-btn" class="add-course-btn">Добавить запись</button></div>
+        </section>
+    </main>
+
+    <!-- Модальное окно для добавления курса -->
+    <div id="course-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Добавить новый курс</h2>
+            <form id="course-form">
+                <div class="form-group">
+                    <label for="course-name">Название курса:</label>
+                    <input type="text" id="course-name" name="course-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="course-percentage">Процент прохождения:</label>
+                    <input type="number" id="course-percentage" name="course-percentage" min="0" max="100" required>
+                </div>
+                <button type="submit" class="submit-btn">Добавить курс</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="copyright">© 2024 Контакты</p>
+        </div>
+    </footer>
+    <script src="../scripts/modal-input-course.js"></script>
+</body>
+</html>

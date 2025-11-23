@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио студента</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html">
+                <img src="../images/logo.jpg"
+                alt="Логотип"
+                class="logo-photo"
+                />
+                </a>
+            </div>
+            <div class="student-name">Пархоменко Аркадий</div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="../index.html" class="nav-link-">Главная</a></li>
+                    <li class="nav-item"><a href="../pages/projects.html" class="nav-link-">Проекты</a></li>
+                    <li class="nav-item"><a href="../pages/diary.html" class="nav-link-">Дневник</a></li>
+                    <li class="nav-item"><a href="../pages/contacts.html" class="nav-link-">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+ <main>
+        <h1 class="contacts-title">Свяжитесь со мной</h1>
+        
+        <div class="contact-container">
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Имя:</label>
+                    <input type="text" id="name" name="name" required>
+                    <span class="error-message" id="name-error"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error-message" id="email-error"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Сообщение:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <span class="error-message" id="message-error"></span>
+                </div>
+                
+                <button type="submit" class="submit-btn">Отправить сообщение</button>
+            </form>
+            
+            <div class="contact-info">
+                <h2 class="contact-title-2">Контакты:</h2>
+                <p><span class="icon">📧</span> student@edu.ru</p>
+                <p><span class="icon">📱</span> GitHub: username</p>
+                <p><span class="icon">📌</span> Город, Страна</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="copyright">© 2024 Контакты</p>
+        </div>
+    </footer>
+<script src="../scripts/output-message.js"></script>
+</body>
+</html>
